@@ -37,7 +37,8 @@ namespace EmployeeManager.Mvc
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseStatusCodePages();
+            app.UseStaticFiles();
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
