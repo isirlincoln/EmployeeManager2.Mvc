@@ -26,7 +26,7 @@ namespace EmployeeManager.Mvc
         {
             services.AddControllersWithViews();
             services.AddDbContext<AppDbContext>(options =>
-            options.UseSqlServer(Configuration["ConnectionStrings:defaultConnection"]));
+                options.UseSqlServer(Configuration["ConnectionStrings:defaultConnection"]));
             services.AddMvc(option => option.EnableEndpointRouting = false);
         }
 
